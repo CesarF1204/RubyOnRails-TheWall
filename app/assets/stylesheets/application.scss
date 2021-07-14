@@ -1,0 +1,133 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ */
+@import "bootstrap";
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'Segoe UI', sans-serif;
+}
+nav {
+    background-color: #1c2b2d;
+    font-size: 30px;
+    padding: 2px 0;
+    margin-bottom: 20px;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 0 10px;
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    color: white;
+    padding-right: 30px;
+}
+nav ul a.logout {
+    font-size: 16px;
+    vertical-align: middle;
+    text-align: center;
+    padding: 5px;
+    background-color: red;
+    border: none;
+    box-shadow: 3px 3px #000;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+.container {
+    padding: 0 20px;
+}
+textarea {
+    width: 100%;
+    font-size: 20px;
+    background-color: transparent;
+}
+input.message, input.comment {
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 8px 20px;
+    box-shadow: 3px 3px #000;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}
+input.message {
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background-color: #2b78e4;
+}
+input.message:hover, input.comment:hover  {
+    transform: translateY(-0.3em);
+    box-shadow: 4px 4px rgba(0,0,0,0.5);
+    transition: 0.3s ease;
+}
+form.message, form.comment {
+    border-bottom: 5px solid black;
+    margin: 50px 0;
+    
+}
+ul li ul {
+    margin-left: 80px;
+}
+.post-box {
+    margin: auto;
+    padding: 40px 100px 0;
+    margin-bottom: 50px;
+    border: 3px solid black;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);
+    width: 800px;
+    
+}
+.message-box {
+    border: 5px solid #3a3b3c;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+#login-container {
+    border: 3px solid black;
+    width: 350px;
+    padding: 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 4px 4px 4px rgba(0,0,0,0.5)
+}
+#username {
+    background: none;
+    color: black;
+    border: 1px solid teal;
+    padding: 5px 6px;
+    width: 200px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+#username:focus {
+    outline: none;
+}
+.signin-btn {
+    margin-top: -5px;
+}
+.errors {
+    color: red;
+}
